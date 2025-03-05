@@ -12,12 +12,12 @@ export class SealChopObject {
     return this;
   }
 
-  #hanx    = null;
+  #hanx   = '姓名字';
 
-  #colorp = null;
-  #colorb = null;
-  #colorf = null;
-  #colori = null;
+  #colorp = '#ffffff';
+  #colorb = '#33aa55';
+  #colorf = '#ffffff';
+  #colori = '#003300';
 
   #dataUrl = null;
 
