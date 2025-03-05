@@ -45,12 +45,13 @@ document.querySelector('#motet-sealchop').innerHTML = img;
 
 That was easy.
 
-Now, let us start a local web server to try this code out.
+Now, let us start a local web server to see this in action.
 
-In the same directory as `index.html`, start a localhost web server.
-+ PHP: `php -S localhost:8888`
-+ Python: `python3 -m http.server`
-+ 
+In the same directory as `index.html`, start a localhost web server. There are many options.
+
++ with PHP: `php -S localhost:8888`
++ with Python 3.x: `python3 -m http.server`
++ with [nodejs](https://stackoverflow.com/a/65981883):
 
 ## SYNPOSIS
 
