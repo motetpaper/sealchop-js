@@ -40,26 +40,90 @@ document.querySelector('#motet-sealchop').innerHTML = img;
 
 Done! That was easy.
 
-## Do more
+## SYNPOSIS
+
+### `constructor()`
+
+Constructs a new chop object.
 
 ```javascript
-// create a new seal chop object
 const chop = new SealChopObject();
+```
 
-// export the chop as a JSON string
+### `.toJSON()`
+
+Returns a JSON string.
+
+```javascript
 const json = chop.toJSON();
 
-// toString() also exports as a JSON string
+// output
+{
+  "p": "#ffffff",
+  "b": "#33aa55",
+  "f": "#ffffff",
+  "i": "#003300",
+  "x": "姓名字"
+}
+```
+
+### `.toString()`
+
+Same as `.toJSON()`.
+
+```javascript
 const str = chop.toString();
 const str = '' + chop;
+```
 
+### `.toDataURL()`
+
+Returns a base64 data string.
+
+```javascript
 // set the name, then get the base64 url
 const img = new Image();
 const url = chop.setName('姓名字').toDataURL();
 img.src = url;
-
-// export as Image element
-// put into a div element
-const img = chop.setName('姓名字').asImageElement();
-document.querySelector('#chop').innerHTML = img;
 ```
+
+### `.asImageElement()`
+
+Returns an HTML Image element with a chop in it.
+
+```javascript
+const chop = new SealChopObject();
+const img = chop.setName('姓名字').asImageElement();
+document.querySelector('#motet-sealchop').innerHTML = img;
+```
+
+### `.setName(string)`
+
+Set `name` with a valid Chinese characters (1, 2, 3 or 4 characters). All other characters are removed. If no characters remain, it is set to `null`.
+
+### `.setPaperColor(string)`
+
+Sets `paper` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+
+### `.setBackgroundColor(string)`
+
+Sets `background` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+
+
+### `.setForegroundColor(string)`
+
+Sets `foreground` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+
+
+### `.setInkColor(string)`
+
+Sets `ink` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+
+
+## Deprecated methods
+
+### `.setXingMing(string)`
+
+Same as `.setName()`. This method will be removed soon.
+
+
