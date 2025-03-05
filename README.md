@@ -122,6 +122,8 @@ Sets `ink` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, se
 
 ## Deprecated methods
 
+> **NOTE:** These methods will be removed soon.
+
 ### `.setXingMing(string)`
 
 Same as `.setName()`. This method will be removed soon.
