@@ -22,7 +22,7 @@ Here is the directory structure:
 
 ### `index.html`
 
-Copy and paste this into your empty `index.html` file.
+Copy and paste the following into your empty `index.html` file.
 
 ```html
 <!doctype html>
@@ -39,7 +39,7 @@ Copy and paste this into your empty `index.html` file.
 
 ### `app.js`
 
-Add a single line to import the object. Start making chops instantly.
+Copy and paste the following into your `app.js`. As you can see, a single line imports the object into the module. Now, you can start making Chinese seal chops.
 
 ```javascript
 import { SealChopObject } from 'https://motetpaper.github.io/sealchop-js/SealChopObject.js'
