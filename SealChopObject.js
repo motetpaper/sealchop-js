@@ -70,7 +70,7 @@ export class SealChopObject {
 
   // returns an HTML Image element using base64 data
   asImageElement() {
-    return `<img width="250" src="${this.#dataUrl}">`;
+    return `<img src="${this.#dataUrl}">`;
   }
 
 
