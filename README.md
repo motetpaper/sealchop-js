@@ -44,7 +44,7 @@ Done! That was easy.
 
 ### `constructor()`
 
-Constructs a new chop object.
+Constructs a new chop object. Returns this object.
 
 ```javascript
 const chop = new SealChopObject();
@@ -99,25 +99,25 @@ document.querySelector('#motet-sealchop').innerHTML = img;
 
 ### `.setName(string)`
 
-Set `name` with a valid Chinese characters (1, 2, 3 or 4 characters). All other characters are removed. If no characters remain, it is set to `null`.
+Set `name` with a valid Chinese characters (1, 2, 3 or 4 characters). All other characters are removed. If no characters remain, it is set to `null`. Also, returns this object.
 
 ### `.setPaperColor(string)`
 
-Sets `paper` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+Sets `paper` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`. Also, returns this object.
 
 ### `.setBackgroundColor(string)`
 
-Sets `background` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+Sets `background` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`. Also, returns this object.
 
 
 ### `.setForegroundColor(string)`
 
-Sets `foreground` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+Sets `foreground` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`. Also, returns this object.
 
 
 ### `.setInkColor(string)`
 
-Sets `ink` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`.
+Sets `ink` color with a valid 6-digit hex color (e.g., `#ffffff`). Otherwise, sets it to `null`. Also, returns this object.
 
 
 ## Deprecated methods
