@@ -1,15 +1,22 @@
 # sealchop-js
 
+## Purpose
+
+**`sealchop-js`** is designed to create Chinese seal chops for display on web pages (and blogs) or for print on paper stationery (e.g., business cards, letterheads, envelopes, notebooks, etc.). This is the web version, designed as a JavaScript module, as opposed to the other versions designed for GitHub generator repos or RESTful APIs.
+
 ## Quick Start
 
-Start with two files: `app.js` and `index.html`.
+We start with two files: `app.js` and `index.html`.
 
+Here is the directory structure:
 ```bash
 ├── app.js
 └── index.html
 ```
 
 ### `index.html`
+
+Copy and paste this into your empty `index.html` file.
 
 ```html
 <!doctype html>
@@ -36,7 +43,14 @@ const img = chop.setName('姓名字').asImageElement();
 document.querySelector('#motet-sealchop').innerHTML = img;
 ```
 
-Done! That was easy.
+That was easy.
+
+Now, let us start a local web server to try this code out.
+
+In the same directory as `index.html`, start a localhost web server.
++ PHP: `php -S localhost:8888`
++ Python: `python3 -m http.server`
++ 
 
 ## SYNPOSIS
 
