@@ -2,7 +2,9 @@
 
 ## Purpose
 
-**`sealchop-js`** is designed to create Chinese seal chops for display on web pages (and blogs) or for print on paper stationery (e.g., business cards, letterheads, envelopes, notebooks, etc.). This is the web version, designed as a JavaScript module, as opposed to the other versions designed for GitHub generator repos or RESTful APIs.
+**`sealchop-js`** is designed to create Chinese seal chops for display on web pages (and blogs) or for print on paper stationery (e.g., business cards, letterheads, envelopes, notebooks, etc.). 
+
+This is the web version, designed as a JavaScript module, as opposed to the other versions designed for GitHub Actions workflows or RESTful APIs.
 
 ## Quick Start
 
