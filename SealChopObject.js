@@ -2,7 +2,7 @@
 // job  : generates a SealChopObject
 // git  : https://github.com/motetpaper/sealchop-js
 // lic  : MIT
-// LTS  : yes, until October 31, 2028
+//
 
 export class SealChopObject {
 
