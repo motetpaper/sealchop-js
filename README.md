@@ -8,7 +8,9 @@ This is the web version, designed as a JavaScript module, as opposed to the othe
 
 ## Long-Term Support
 
-Long-term support for `sealchop-js` is available until October 31, 2028.
+> **NOTE:** Available at a later date.
+
+~~Long-term support for `sealchop-js` is available until October 31, 2028.~~
 
 ## Quick Start
 
