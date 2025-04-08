@@ -2,6 +2,7 @@
 // job  : generates a SealChopObject
 // git  : https://github.com/motetpaper/sealchop-js
 // lic  : MIT
+// ver  : v8.2
 //
 
 export class SealChopObject {
@@ -24,41 +25,40 @@ export class SealChopObject {
   // sets the name, returns this object
   setName(str) {
 
-    // remove non-Han characters
-    const re = /\P{Script=Han}/gu
-    str = str.replace(re, '');
+    // keep only Han OR Hangul characters
 
-    this.#hanx = str;
-    this.#make();
+    const re = /!(\p{Script=Han}|\p{Script=Hangul})/gu
+    // 이명박 test
+    // 李明博 test
 
+
+    str = str.replace(re,'');
+
+    this.#hanx = str || '姓名字';
     return this;
   }
 
   // sets the paper color, returns this object
   setPaperColor(str) {
     this.#colorp = this.#isHexColor(str) ? str : null;
-    this.#make();
     return this;
   }
 
   // sets the background color, returns this object
   setBackgroundColor(str) {
     this.#colorb = this.#isHexColor(str) ? str : null;
-    this.#make();
     return this;
   }
 
   // sets the foreground color, returns this object
   setForegroundColor(str) {
     this.#colorf = this.#isHexColor(str) ? str : null;
-    this.#make();
     return this;
   }
 
   // sets the ink color, returns this object
   setInkColor(str) {
     this.#colori = this.#isHexColor(str) ? str : null;
-    this.#make();
     return this;
   }
 
@@ -70,12 +70,13 @@ export class SealChopObject {
 
   // returns an HTML Image element using base64 data
   asImageElement() {
+    this.#make();
     return `<img src="${this.#dataUrl}">`;
   }
 
-
   // returns the base64 data of this object
   toDataURL() {
+    this.#make();
     return this.#dataUrl;
   }
 
@@ -117,7 +118,6 @@ export class SealChopObject {
     // foreground rounded rectangle radius
     const fr = 50;
 
-
     // default values
     // get custom values from YAML
 
@@ -131,7 +131,6 @@ export class SealChopObject {
     const bgc   = this.#colorb ?? '#33aa55';
     const fgc   = this.#colorf ?? '#ffffff';
     const ink   = this.#colori ?? '#003300';
-
 
     // p - paper area
     ctx.beginPath();
@@ -187,7 +186,6 @@ export class SealChopObject {
 
     for(let i = 0; i < dims.length; i++) {
 
-
       // f - foreground area
       ctx.beginPath();
       ctx.strokeStyle = fgc;
@@ -200,7 +198,7 @@ export class SealChopObject {
       ctx.fill();
 
 
-      // ink area
+      // i - ink area
       ctx.beginPath();
       ctx.fillStyle = ink;
 
