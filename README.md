@@ -55,13 +55,18 @@ That was easy.
 
 Now, let us start a local web server to see this in action.
 
-In the same directory as `index.html`, start a localhost web server. There are many options.
+In the same directory as `index.html`, start a localhost web server with a [secure context][sec].
 
-+ with PHP: `php -S localhost:8888`
-+ with Python 3.x: `python3 -m http.server`
-+ with [nodejs](https://stackoverflow.com/a/65981883):
+For example:
+```bash
+php -S localhost:8888
+```
+
+[sec]: https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts
+
 
 ## SYNPOSIS
+
 
 ### `constructor()`
 
