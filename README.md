@@ -1,3 +1,5 @@
+> ## **NOTE:** This is the software object for developers. To create a seal chop design online, please use [the Chinese Korean Seal Chop Generator](https://motetpaper.github.io/chop/).
+
 # sealchop-js
 
 ## Purpose
