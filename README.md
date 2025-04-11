@@ -8,12 +8,6 @@
 
 This is the web version, designed as a JavaScript module, as opposed to the other versions designed for GitHub Actions workflows or RESTful APIs.
 
-## Long-Term Support
-
-> **NOTE:** Available at a later date.
-
-~~Long-term support for `sealchop-js` is available until October 31, 2028.~~
-
 ## Quick Start
 
 We start with two files: `app.js` and `index.html`.
